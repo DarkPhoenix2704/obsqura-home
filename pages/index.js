@@ -62,7 +62,7 @@ export default function Home() {
                     } >
                 <ul>
                 <li className='p-4   text-4xl hover:text-gray-500 '>
-                    <Link href="/">Home</Link>
+                    <Link href="/">Home1</Link>
                 </li>
                 <li className='p-4 text-4xl hover:text-gray-500 '>
                     <Link href="/#gallery">Gallery</Link>
