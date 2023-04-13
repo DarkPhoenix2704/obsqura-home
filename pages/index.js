@@ -50,31 +50,15 @@ export default function Home() {
               priority
              />
             </Link>
-            <ul className='hidden sm:flex '>
-                <li className='p-4'>
-                    <Link href="/">Home</Link>
-                </li>
-                <li className='p-4'>
-                    <Link href="/#gallery">Gallery</Link>
-                </li>
-                <li className='p-4'>
-                    <Link href="/work">Work</Link>
-                </li>
-                <li className='p-4'>
-                    <Link href="/contact">Contact</Link>
-                </li>
-
-
-
-            </ul>
+            
                 {/*Mobile button*/}
-                <div onClick={handleNav} className='block sm:hidden z-10'>
+                <div onClick={handleNav}  className='block m:hidden z-10' >
                    {nav ?  <AiOutlineClose size={20} style={{color: `${textColor}`}}/> :<AiOutlineMenu size={20} style={{color: `${textColor}`}}/>}
                 </div>
                 {/*Mobile menu*/ }
                 <div className={nav 
-                ? 'sm:hidden absolute left-0 right-0 top-0 bottom-0 w-full h-screen items-center bg-black ease-in duration-300 flex justify-center'
-                   :'sm:hidden absolute left-[-100%] right-0 top-0 bottom-0 w-full h-screen items-center bg-black ease-in duration-300 flex justify-center' 
+                ? ' m:hidden absolute left-0 right-0 top-0 bottom-0 w-full h-screen items-center bg-black ease-in duration-300 flex justify-center'
+                   :' m:hidden absolute left-[-100%] right-0 top-0 bottom-0 w-full h-screen items-center bg-black ease-in duration-300 flex justify-center' 
                     } >
                 <ul>
                 <li className='p-4   text-4xl hover:text-gray-500 '>
