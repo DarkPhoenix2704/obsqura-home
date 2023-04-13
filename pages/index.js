@@ -34,11 +34,11 @@ export default function Home() {
     },[]
     )
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main >
 
     
 <div 
- className='fixed left-0 top-0 w-full z-10 ease-in duration-300 '>
+ className=' left-0 top-0 w-full z-10 ease-in duration-300 '>
         <div className='  flex justify-between m-5 p-5  text-white'>
             <Link href='/' >
              <Image src="/icetlogo.svg"
@@ -52,7 +52,7 @@ export default function Home() {
             </Link>
             
                 {/*Mobile button*/}
-                <div onClick={handleNav}  className='block m:hidden z-10 p-5 ' >
+                <div onClick={handleNav}  className='block m:hidden z-10 ' >
                    {nav ?  <AiOutlineClose size={20} style={{color: `${textColor}`}}/> :<AiOutlineMenu size={20} style={{color: `${textColor}`}}/>}
                 </div>
                 {/*Mobile menu*/ }
@@ -62,16 +62,19 @@ export default function Home() {
                     } >
                 <ul>
                 <li className='p-4   text-4xl hover:text-gray-500 '>
-                    <Link href="/">Home1</Link>
+                    <Link href="/">About</Link>
                 </li>
                 <li className='p-4 text-4xl hover:text-gray-500 '>
-                    <Link href="/#gallery">Gallery</Link>
+                    <Link href="/#gallery">Events</Link>
                 </li>
                 <li className='p-4 text-4xl hover:text-gray-500 '>
-                    <Link href="/work">Work</Link>
+                    <Link href="/work">Workshops</Link>
                 </li>
                 <li className='p-4 text-4xl hover:text-gray-500 '>
-                    <Link href="/contact">Contact</Link>
+                    <Link href="/work">Competitions</Link>
+                </li>
+                <li className='p-4 text-4xl hover:text-gray-500 '>
+                    <Link href="/contact">Contact Support</Link>
                 </li>
 
 
@@ -84,7 +87,33 @@ export default function Home() {
 
     </div>
 
+    
 
+    <div className='flex items-center justify-between h-screen mb-[8rem] bg-fixed bg-center bg-cover custom-img '>
+    <div className='p-5 text-white mt-[-10rem]'>
+            <div className='py-5 mt-[-8rem]'>
+            <h2 className='text-7xl font-bold font-spaceGrotesk"'>UNLEASH THE</h2>
+            <br></br>
+            <h2 className='text-7xl font-bold font-spaceGrotesk" '>REALITY</h2>
+            </div>
+            <div class="flex"><a href="#mtabs" class="px-4 py-2 text-xs md:text-base  md:px-8 md:py-5  mr-2 text-black font-bold font-spaceGrotesk bg-violet-600 hover:bg-zinc-900 hover:text-white transition-all duration-300">EXPLORE</a><a aria-current="page" class="px-4 py-2  text-xs md:text-base md:px-8 md:py-5  mr-2 text-white font-bold font-spaceGrotesk bg-zinc-600 hover:bg-zinc-900 hover:text-white transition-all duration-300 active" href="/">REGISTER</a></div>
+          
+    </div>
+    
+        </div>
+       
+       <div>
+        <h1>About</h1>
+       </div>
+       
+       <div>
+       <div id="mtabs" class="sticky top-0 z-30  bg-black"><div class="container mx-auto bg-black"><div class="flex z-10 flex-row justify-start whitespace-nowrap overflow-auto scrollbar-hide mx-0"><a aria-current="page" class="text-violet-600 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-5 my-4 cursor-pointer" href="/">ALL</a><a class="text-zinc-500 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-5 my-4 cursor-pointer" href="/workshops">WORKSHOPS</a><a class="text-zinc-500 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-8 my-4 cursor-pointer" href="/competitions">COMPETITIONS</a><a class="text-zinc-500 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-8 my-4 cursor-pointer" href="/expo">EXPO</a><a class="text-zinc-500 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-8 my-4 cursor-pointer" href="/events">EVENTS</a></div><div class="lg:mx-10"><div class="w-full bg-gray-100/20 h-0.5"></div></div></div></div>
+       </div>
+ 
     </main>
+    
+        
+
   )
 }
+
