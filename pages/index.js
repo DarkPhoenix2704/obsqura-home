@@ -2,13 +2,23 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-
+import ItemsCarousel from 'react-items-carousel';
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+
+
+
+
+
+
+
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    const [EventsactiveItemIndex, setEventsActiveItemIndex] = useState(0);
+    const [WkshopsactiveItemIndex, setWkshopsActiveItemIndex] = useState(0);
+  const chevronWidth = 40;
   const [nav,setNav]=useState(false)
     const [color, setColor]=useState('transparent');
     const [textColor,setTextColor]=useState("white");
@@ -32,8 +42,11 @@ export default function Home() {
         }
         window.addEventListener('scroll',changeColor)
     },[]
+
+    
     )
   return (
+    
     <main >
 
     
@@ -89,7 +102,7 @@ export default function Home() {
 
     
 
-    <div className='flex items-center justify-between h-screen mb-[8rem] bg-fixed bg-center bg-cover custom-img '>
+    <div className='flex items-center justify-between h-screen mb-[4rem] bg-fixed bg-center bg-cover custom-img '>
     <div className='p-5 text-white mt-[-10rem]'>
             <div className='py-5 mt-[-8rem]'>
             <h2 className='text-7xl font-bold font-spaceGrotesk"'>UNLEASH THE</h2>
@@ -102,13 +115,69 @@ export default function Home() {
     
         </div>
        
-       <div>
-        <h1>About</h1>
-       </div>
+        <div class="py-5 lg:py-10 mb-[7rem]"><div class="px-4 lg:px-64 sm:px-4 container mx-auto">
+            <h1 className='text-4xl font-bold'>About</h1>
+            <br></br>
+            <h1 class="text-white font-spaceGrotesk lg:text-2xl md:text-xl text-lg">Obscura is the national level annual technical festival of Ilahia College of Engineering and Technology Mulavoor. It is a three-day event that showcases the technical prowess and creativity of students from across the region. The festival provides a platform for students to showcase their talent, interact with industry experts, and learn about the latest technological advancements.
+</h1><br></br></div></div>
+     
+     <div className='px-2 lg:px-40 sm:px-4 mb-[6rem]'>
+        <h1 className='text-3xl font-bold  text-white'>Events</h1>
+        
        
-       <div>
-       <div id="mtabs" class="sticky top-0 z-30  bg-black"><div class="container mx-auto bg-black"><div class="flex z-10 flex-row justify-start whitespace-nowrap overflow-auto scrollbar-hide mx-0"><a aria-current="page" class="text-violet-600 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-5 my-4 cursor-pointer" href="/">ALL</a><a class="text-zinc-500 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-5 my-4 cursor-pointer" href="/workshops">WORKSHOPS</a><a class="text-zinc-500 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-8 my-4 cursor-pointer" href="/competitions">COMPETITIONS</a><a class="text-zinc-500 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-8 my-4 cursor-pointer" href="/expo">EXPO</a><a class="text-zinc-500 font-spaceGrotesk font-bold text-4xl lg:text-5xl lg:mx-10 mr-8 my-4 cursor-pointer" href="/events">EVENTS</a></div><div class="lg:mx-10"><div class="w-full bg-gray-100/20 h-0.5"></div></div></div></div>
-       </div>
+     </div>
+     
+     <div style={{ padding: `0 ${chevronWidth}px` }} className='mb-[10rem]'>
+      <ItemsCarousel
+        requestToChangeActive={setEventsActiveItemIndex}
+        activeItemIndex={EventsactiveItemIndex}
+        numberOfCards={4}
+        gutter={20}
+        leftChevron={<button>{'<'}</button>}
+        rightChevron={<button>{'>'}</button>}
+        outsideChevron
+        chevronWidth={chevronWidth}
+      >
+        <div style={{ height: 200,width:300, background: '#EEE' }}>First card</div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>Second card</div>
+        <div style={{ height: 200, width:300,background: '#EEE' }}>Third card</div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>Fourth card</div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>First card</div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>Second card</div>
+        <div style={{ height: 200, width:300,background: '#EEE' }}>Third card</div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>Fourth card</div>
+      </ItemsCarousel>
+     </div>
+
+     <div className='px-2 lg:px-40 sm:px-4 mb-[6rem]'>
+        <h1 className='text-3xl font-bold  text-white'>Workshops</h1>
+        
+       
+     </div>
+     
+     <div style={{ padding: `0 ${chevronWidth}px` }} className='mb-[10rem]'>
+      <ItemsCarousel
+        requestToChangeActive={setWkshopsActiveItemIndex}
+        activeItemIndex={WkshopsactiveItemIndex}
+        numberOfCards={4}
+        gutter={20}
+        leftChevron={<button>{'<'}</button>}
+        rightChevron={<button>{'>'}</button>}
+        outsideChevron
+        chevronWidth={chevronWidth}
+        
+      >
+        <div style={{ height: 200,width:300, background: '#EEE' }}><a href='/'>fisrt</a></div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>Second card</div>
+        <div style={{ height: 200, width:300,background: '#EEE' }}>Third card</div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>Fourth card</div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>First card</div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>Second card</div>
+        <div style={{ height: 200, width:300,background: '#EEE' }}>Third card</div>
+        <div style={{ height: 200,width:300, background: '#EEE' }}>Fourth card</div>
+      </ItemsCarousel>
+     </div>
+       
  
     </main>
     
