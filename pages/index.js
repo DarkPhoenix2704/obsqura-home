@@ -39,7 +39,7 @@ export default function Home() {
     
 <div 
  className='fixed left-0 top-0 w-full z-10 ease-in duration-300 '>
-        <div className=' max-w-[1200px] flex justify-between items-center p-4  text-white'>
+        <div className='  flex justify-between m-5 p-5  text-white'>
             <Link href='/' >
              <Image src="/icetlogo.svg"
              
@@ -52,7 +52,7 @@ export default function Home() {
             </Link>
             
                 {/*Mobile button*/}
-                <div onClick={handleNav}  className='block m:hidden z-10' >
+                <div onClick={handleNav}  className='block m:hidden z-10 p-5 ' >
                    {nav ?  <AiOutlineClose size={20} style={{color: `${textColor}`}}/> :<AiOutlineMenu size={20} style={{color: `${textColor}`}}/>}
                 </div>
                 {/*Mobile menu*/ }
