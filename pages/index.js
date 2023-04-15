@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
@@ -93,7 +94,7 @@ export default function Home() {
         
 
 <div 
- className=' left-0 top-0 w-full z-10 ease-in duration-300 '>
+ className='  w-full z-10 ease-in duration-300 '>
         <div className='  flex justify-between m-5 p-5  text-white'>
             <Link href='/' >
              <Image src="/icetlogo.svg"
@@ -112,8 +113,8 @@ export default function Home() {
                 </div>
                 {/*Mobile menu*/ }
                 <div className={nav 
-                ? ' m:hidden absolute left-0 right-0 top-0 bottom-0 w-full h-screen items-center bg-black ease-in duration-300 flex justify-center'
-                   :' m:hidden absolute left-[-100%] right-0 top-0 bottom-0 w-full h-screen items-center bg-black ease-in duration-300 flex justify-center' 
+                ? ' m:hidden absolute left-0  w-full h-screen items-center bg-black ease-in duration-300 flex justify-center'
+                   :' m:hidden absolute left-[-100%]  w-full h-screen items-center bg-black ease-in duration-300 flex justify-center' 
                     } >
                 <ul>
                 <li className='p-4   text-4xl hover:text-gray-500 '>
@@ -171,12 +172,12 @@ export default function Home() {
      </div>
        <div className='mb-[8rem] ml-16'>
      <Carousel responsive={responsive}>
-        <div className='text-black font-bold items-center ' style={{ height: 200,width:300, background: '#EEE' }}> <Image alt='' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}/></div>
-        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <Image  alt='' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}/></div>
+        <div className='text-black font-bold items-center ' style={{ height: 200,width:300, background: '#EEE' }}> <img alt='' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}/></div>
+        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <img  alt='' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}/></div>
 
-        <div className='text-black font-bold items-center' style={{ height: 200, width:300,background: '#EEE' }}> <Image alt='' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}/></div>
+        <div className='text-black font-bold items-center' style={{ height: 200, width:300,background: '#EEE' }}> <img alt='' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}/></div>
 
-        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <Image alt=''  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}/></div>
+        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <img alt=''  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}/></div>
 
 </Carousel>
 </div>
@@ -194,7 +195,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5  lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -212,7 +213,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600}  alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -231,7 +232,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600}  alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -253,7 +254,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600}  alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -273,7 +274,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -291,7 +292,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -324,7 +325,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5  lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -342,7 +343,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg"  width={400} height={600} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -361,7 +362,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -383,7 +384,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -403,7 +404,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -421,7 +422,7 @@ export default function Home() {
     <a class="" href="/workshop/A09MECW">
         <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <Image class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
