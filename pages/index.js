@@ -2,7 +2,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import ItemsCarousel from 'react-items-carousel';
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
 import {AiOutlineMenu, AiOutlineClose, AiFillInstagram, AiFillPhone} from 'react-icons/ai'
 
 
@@ -17,9 +18,27 @@ import {AiOutlineMenu, AiOutlineClose, AiFillInstagram, AiFillPhone} from 'react
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
     
-    const [EventsactiveItemIndex, setEventsActiveItemIndex] = useState(0);
-    const [WkshopsactiveItemIndex, setWkshopsActiveItemIndex] = useState(0);
+
   const chevronWidth = 40;
   const [nav,setNav]=useState(false)
     const [color, setColor]=useState('transparent');
@@ -49,9 +68,30 @@ export default function Home() {
     )
   return (
     
-    <main >
-
+    <main className='m-auto w-full' >
+        
+        <div className=' h-screen mb-[3rem] bg-fixed bg-center bg-cover custom-img '>
+    <div className='p-5 text-white '>
+            <div className='flex items-center justify-center mt-60  '>
+            <Image  src="/obsquralogoconf.png"
+             
+             
+             
+             width={500}
+             height={500}
+             priority
+            />
+            
+            </div>
+            <div className='items-center flex justify-center py-40'>
+            <h3>scroll down</h3>
+           </div>
+          
+    </div>
     
+        </div>
+        
+
 <div 
  className=' left-0 top-0 w-full z-10 ease-in duration-300 '>
         <div className='  flex justify-between m-5 p-5  text-white'>
@@ -107,9 +147,9 @@ export default function Home() {
     <div className='flex items-center justify-between h-screen mb-[4rem] bg-fixed bg-center bg-cover custom-img '>
     <div className='p-5 text-white mt-[-10rem]'>
             <div className='py-5 mt-[-8rem]'>
-            <h2 className='text-7xl font-bold font-spaceGrotesk"'>UNLEASH THE</h2>
+            <h2 className='text-5xl font-bold font-spaceGrotesk"'>UNLEASHING</h2>
             <br></br>
-            <h2 className='text-7xl font-bold font-spaceGrotesk" '>REALITY</h2>
+            <h2 className='text-5xl font-bold font-spaceGrotesk" '>CREATIVITY</h2>
             </div>
             <div class="flex"><a href="#events" class="px-4 py-2 text-xs md:text-base  md:px-8 md:py-5  mr-2 text-black font-bold font-spaceGrotesk bg-violet-600 hover:bg-zinc-900 hover:text-white transition-all duration-300">EXPLORE</a><a aria-current="page" class="px-4 py-2  text-xs md:text-base md:px-8 md:py-5  mr-2 text-white font-bold font-spaceGrotesk bg-zinc-600 hover:bg-zinc-900 hover:text-white transition-all duration-300 active" href="/">REGISTER</a></div>
           
@@ -123,36 +163,26 @@ export default function Home() {
             <h1 class="text-white font-spaceGrotesk lg:text-2xl md:text-xl text-lg">Obscura is the national level annual technical festival of Ilahia College of Engineering and Technology Mulavoor. It is a three-day event that showcases the technical prowess and creativity of students from across the region. The festival provides a platform for students to showcase their talent, interact with industry experts, and learn about the latest technological advancements.
 </h1><br></br></div></div>
      
-     <div id='events' className='px-2 lg:px-40 sm:px-4 mb-[6rem]'>
-        <h1 className='text-3xl font-bold  text-white'>Events</h1>
+     <div id='events' className='px-2 lg:px-40 sm:px-2 mb-[6rem]'>
+        <h1 className='text-5xl font-bold  text-white'>Events</h1>
         
        
      </div>
-     
-     <div style={{ padding: `0 ${chevronWidth}px` }} className='mb-[10rem]'>
-      <ItemsCarousel
-        requestToChangeActive={setEventsActiveItemIndex}
-        activeItemIndex={EventsactiveItemIndex}
-        numberOfCards={4}
-        gutter={20}
-        leftChevron={<button>{'<'}</button>}
-        rightChevron={<button>{'>'}</button>}
-        outsideChevron
-        chevronWidth={chevronWidth}
-      >
-        <div className='text-black font-bold items-center ' style={{ height: 200,width:300, background: '#EEE' }}> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{width:300,height:200   }}></img></div>
-        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{width:300,height:200   }}></img></div>
-        <div className='text-black font-bold items-center' style={{ height: 200, width:300,background: '#EEE' }}> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{width:300,height:200   }}></img></div>
-        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{width:300,height:200   }}></img></div>
-        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{width:300,height:200   }}></img></div>
-        <div className='text-black font-bold items-center' style={{ height: 200, width:300,background: '#EEE' }}> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{width:300,height:200   }}></img></div>
-        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{width:300,height:200   }}></img></div>
-      </ItemsCarousel>
-     </div>
+       <div className='mb-[8rem] ml-16'>
+     <Carousel responsive={responsive}>
+        <div className='text-black font-bold items-center ' style={{ height: 200,width:300, background: '#EEE' }}> <img  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}></img></div>
+        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <img   src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}></img></div>
+
+        <div className='text-black font-bold items-center' style={{ height: 200, width:300,background: '#EEE' }}> <img  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}></img></div>
+
+        <div className='text-black font-bold items-center' style={{ height: 200,width:300, background: '#EEE' }}> <img   src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}></img></div>
+
+</Carousel>
+</div>
 
      <div id='workshop' className='px-2 lg:px-40 sm:px-4 mb-[6rem]'>
         <h1 className='text-5xl font-bold  text-white'>Workshops</h1>
-        
+      
        
      </div>
      
@@ -167,8 +197,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -185,8 +215,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase"> &nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -204,8 +234,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -226,8 +256,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.r<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase"> &nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -246,8 +276,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -264,8 +294,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -297,8 +327,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -315,8 +345,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -334,8 +364,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">.&nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -356,8 +386,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -377,7 +407,7 @@ export default function Home() {
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
                         <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
@@ -394,8 +424,8 @@ export default function Home() {
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
-                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate ">.<br></br></h2>
-                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">. &nbsp;.</h5>
+                        <h2 class="text-white text-1xl md:text-1xl uppercase font-bold mb-2 font-spaceGrotesk md:truncate "><br></br></h2>
+                        <h5 class="text-gray-300 font-medium text-lg mb-1 font-spaceGrotesk uppercase">&nbsp;</h5>
                         </div>
                         </div>
                         </div>
