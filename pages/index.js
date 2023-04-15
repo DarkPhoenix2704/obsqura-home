@@ -95,7 +95,7 @@ export default function Home() {
 
 <div 
  className='  w-full z-10 ease-in duration-300 '>
-        <div className='  flex justify-between m-5 p-5  text-white'>
+        <div className='  flex justify-between m-3 p-5  text-white'>
             <Link href='/' >
              <Image src="/icetlogo.svg"
              
@@ -165,11 +165,12 @@ export default function Home() {
             <h1 class="text-white font-spaceGrotesk lg:text-2xl md:text-xl text-lg">Obscura is the national level annual technical festival of Ilahia College of Engineering and Technology Mulavoor. It is a three-day event that showcases the technical prowess and creativity of students from across the region. The festival provides a platform for students to showcase their talent, interact with industry experts, and learn about the latest technological advancements.
 </h1><br></br></div></div>
      
-     <div id='events' className='px-2 lg:px-40 sm:px-2 mb-[6rem]'>
-        <h1 className='text-5xl font-bold  text-white'>Events</h1>
+     <div id='events' className='px-2 lg:px-40 sm:px-2 mb-[6rem] w-full'>
+        <h1 className='text-5xl font-bold mb-4 text-white'>Events</h1>
         
-       
+        <div class="lg:mx-2 mb-7"><div class="w-full bg-gray-100/20 h-0.5"></div></div>
      </div>
+     
        <div className='mb-[8rem] ml-16'>
      <Carousel responsive={responsive}>
         <div className='text-black font-bold items-center ' style={{ height: 200,width:300, background: '#EEE' }}> <img alt='' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60y5IKXel6z0_aqrSNfGQp8euiIuv52pzpg&usqp=CAU' style={{height:200}}/></div>
@@ -183,9 +184,9 @@ export default function Home() {
 </div>
 
      <div id='workshop' className='px-2 lg:px-40 sm:px-4 mb-[6rem]'>
-        <h1 className='text-5xl font-bold  text-white'>Workshops</h1>
+        <h1 className='text-5xl font-bold mb-4 text-white'>Workshops</h1>
       
-       
+        <div class="lg:mx-2 mb-7"><div class="w-full bg-gray-100/20 h-0.5"></div></div>
      </div>
      
      <div className='class="bg-black grid grid-rows-2 items-stretch lg:grid-cols-3 home-cards-container ' style={
@@ -193,9 +194,9 @@ export default function Home() {
 
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5  lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5  lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256 " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -211,9 +212,9 @@ export default function Home() {
          
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256  " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600}  alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -230,9 +231,9 @@ export default function Home() {
          
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256 " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600}  alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -252,9 +253,9 @@ export default function Home() {
     
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256 " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600}  alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg"  style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -272,9 +273,9 @@ export default function Home() {
          
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256 " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -290,9 +291,9 @@ export default function Home() {
            
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256 " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -315,7 +316,9 @@ export default function Home() {
      </div>
 
      <div id='competitions' className='px-2 lg:px-40 sm:px-4 mb-[6rem]'>
-        <h1 className='text-5xl font-bold  text-white'>Competitions</h1></div>
+        <h1 className='text-5xl font-bold mb-4 text-white'>Competitions</h1>
+        <div class="lg:mx-2 mb-7"><div class="w-full bg-gray-100/20 h-0.5"></div></div>
+        </div>
         
        
         <div className='class="bg-black grid grid-rows-2 items-stretch lg:grid-cols-3 home-cards-container ' style={
@@ -323,9 +326,9 @@ export default function Home() {
 
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5  lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5  lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256  " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}}  alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -341,9 +344,9 @@ export default function Home() {
          
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256  " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg"  width={400} height={600} alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -360,9 +363,9 @@ export default function Home() {
          
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256 " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}}  alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -382,9 +385,9 @@ export default function Home() {
     
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256 " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -402,9 +405,9 @@ export default function Home() {
          
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256 " >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
@@ -420,9 +423,9 @@ export default function Home() {
            
 <div style={{opacity: 1, transform: 'none'}}>
     <a class="" href="/workshop/A09MECW">
-        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white " style={{width: 400,height:600}}>
+        <div class="home-card ml-2 mr-2 h-full pt-2 pb-5 lg:pl-5 lg:pr-5 lg:w-auto w-full duration-300 hover:scale-105 text-white w-256"  >
             <div class="shadow-lg hover:bg-zinc-900  cursor-pointerbg-white hover:scale-none"><div class="bg-black relative">
-                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" width={400} height={600} alt=""/>
+                <img class="m-0 p-0 w-full" src="https://t4.ftcdn.net/jpg/03/17/47/97/360_F_317479799_fMZdfR27iBjpxOtW1g5af9eIrQdQ92Zf.jpg" style={{width:256}} alt=""/>
                 <div class="absolute top-0 text-xs left-0 bg-blue-800 tracking-tight backdrop-blur-md px-4 py-1  font-spaceGrotesk">Comming Soon</div>
                 <div class="absolute bottom-0 right-5 rounded-t-lg bg-black/50 tracking-tight backdrop-blur px-4 py-1 !text-bglime-400 font-spaceGrotesk">₹</div>
               </div><div class="p-5 lg:p-6">
