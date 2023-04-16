@@ -2,6 +2,8 @@
 
 import localFont from "next/font/local";
 import { useCountdown } from "@app/hooks/useCountdown";
+import NavBar from "@app/components/NavBar";
+import SponsorsBlack from "@app/components/SponsorsBlock";
 
 const myFont = localFont({ src: "./clashDisplay.woff2" });
 
@@ -10,11 +12,10 @@ export default function Home() {
   return (
     <div className={myFont.className}>
       <div className="bg-woodsmoke-950 min-h-screen relative">
-        <img
-          src="bg.svg"
-          alt="background"
-          className="absolute inset-0 object-cover w-full h-full"
-        />
+        <div className="absolute top-5 w-full px-5">
+          <NavBar />
+        </div>
+
         <div className="flex z-[2] flex-col gap-6 items-center justify-center h-screen">
           <img
             src="/obsquralogoconf.png"
@@ -40,7 +41,13 @@ export default function Home() {
             {days} Days {hours} Hours {minutes} minutes
           </div>
         </div>
+        <SponsorsBlack />
       </div>
+      <img
+        src="bg.svg"
+        alt="background"
+        className="absolute inset-0 pointer-events-none object-cover w-full h-full"
+      />
     </div>
   );
 }
