@@ -16,7 +16,7 @@ const Footer = () => {
           Ilahia College of Engineering and Technology
         </h1>
       </Link>
-      <h1 className="text-center text-white-1000">Crafted by Team Obscua</h1>
+      <h1 className="text-center text-white-1000">Crafted by Team OBSQURA</h1>
     </div>
   );
 };
