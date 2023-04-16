@@ -8,7 +8,7 @@ const NavBar = () => {
     <div className="flex z-[10] flex-row items-center justify-between">
       <Link href="/">
         <h1 className="text-white-100 text-sm">
-          National Tecnho Cultural Fiesta of ICET
+          National Techno Cultural Fiesta of ICET
         </h1>
       </Link>
       <FaBars className="text-white-1000 focus:transform focus:rotate-90 z-[2000] block rounded-md md:hidden bg-shark-950 p-1 w-8 h-8" />
