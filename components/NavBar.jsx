@@ -6,9 +6,11 @@ const NavBar = () => {
   const router = useRouter();
   return (
     <div className="flex z-[10] flex-row items-center justify-between">
-      <h1 className="text-white-100 text-sm">
-        National Techo Cultural Fiesta of ICET
-      </h1>
+      <Link href="/">
+        <h1 className="text-white-100 text-sm">
+          National Techo Cultural Fiesta of ICET
+        </h1>
+      </Link>
       <FaBars className="text-white-1000 focus:transform focus:rotate-90 z-[2000] block rounded-md md:hidden bg-shark-950 p-1 w-8 h-8" />
       <div className="flex-row gap-4 px-8 rounded-lg hidden md:flex bg-shark-950">
         <Link
