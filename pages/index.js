@@ -41,13 +41,13 @@ export default function Home() {
           </div>
         </div>
         <SponsorsBlack />
+        <Footer />
       </div>
       <img
         src="bg.svg"
         alt="background"
         className="absolute inset-0 pointer-events-none object-cover w-full h-full"
       />
-      <Footer />
     </BaseLayout>
   );
 }

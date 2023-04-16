@@ -3,8 +3,8 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="absolute bottom-0  inset-x-0 ">
-      <div className="flex py-4 items-center gap-16 justify-center flex-row ">
+    <div className="">
+      <div className="flex py-4 bg-transparent items-center gap-16 justify-center flex-row ">
         <Link href="https://www.instagram.com/obsqura.23/">
           <FaInstagram className="w-12 text-white-1000 h-12 p-1" />
         </Link>
