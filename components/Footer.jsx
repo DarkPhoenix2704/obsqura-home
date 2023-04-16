@@ -11,6 +11,11 @@ const Footer = () => {
         <FaFacebook className="w-12 h-12 text-white-1000 p-1" />
         <FaTwitter className="w-12 h-12 text-white-1000 p-1" />
       </div>
+      <Link href="https://icet.ac.in">
+        <h1 className="text-center font-semibold text-white-1000">
+          Ilahia College of Engineering and Technology
+        </h1>
+      </Link>
       <h1 className="text-center text-white-1000">Crafted by Team Obscua</h1>
     </div>
   );
