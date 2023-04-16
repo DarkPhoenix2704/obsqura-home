@@ -9,7 +9,7 @@ const NavBar = () => {
       <h1 className="text-white-100 text-sm">
         National Techo Cultural Fiesta of ICET
       </h1>
-      <FaBars className="text-white-1000 focus: transform rotate-90 z-[2000] block rounded-md md:hidden bg-shark-950 p-1 w-8 h-8" />
+      <FaBars className="text-white-1000 focus:transform focus:rotate-90 z-[2000] block rounded-md md:hidden bg-shark-950 p-1 w-8 h-8" />
       <div className="flex-row gap-4 px-8 rounded-lg hidden md:flex bg-shark-950">
         <Link
           href="/"
