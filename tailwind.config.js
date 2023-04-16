@@ -1,18 +1,55 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './app/**/*.{js,ts,jsx,tsx}',
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        woodsmoke: {
+          50: "#f6f6f7",
+          100: "#e0e2e7",
+          200: "#c0c6cf",
+          300: "#99a1af",
+          400: "#747b8d",
+          500: "#5a6072",
+          600: "#464c5b",
+          700: "#3b3f4a",
+          800: "#32343d",
+          900: "#2c2f35",
+          950: "#111216",
+        },
+        white: {
+          50: "#ffffff",
+          100: "#efefef",
+          200: "#dcdcdc",
+          300: "#bdbdbd",
+          400: "#989898",
+          500: "#7c7c7c",
+          600: "#656565",
+          700: "#525252",
+          800: "#464646",
+          900: "#3d3d3d",
+          950: "#292929",
+          1000: "#ffffff",
+        },
+        shark: {
+          50: "#f4f5f7",
+          100: "#e3e5ea",
+          200: "#caced7",
+          300: "#a6aeba",
+          400: "#798497",
+          500: "#5e687c",
+          600: "#515869",
+          700: "#464b58",
+          800: "#3e424c",
+          900: "#2d2f36",
+          950: "#22242a",
+        },
       },
     },
   },
   plugins: [],
-}
+};
