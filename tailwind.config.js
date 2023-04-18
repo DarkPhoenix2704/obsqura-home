@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      background: {
+        hoverBg: "linear-gradient(90.73deg, #484A54 -86.18%, #25262B 101.37%)",
+      },
       colors: {
         woodsmoke: {
           50: "#f6f6f7",
@@ -99,6 +102,19 @@ module.exports = {
           800: "#94440c",
           900: "#7a390d",
           950: "#461c02",
+        },
+        yellow: {
+          50: "#fcffe7",
+          100: "#f5ffc1",
+          200: "#efff86",
+          300: "#efff41",
+          400: "#f6ff0d",
+          500: "#fffb00",
+          600: "#d1bc00",
+          700: "#a68802",
+          800: "#896a0a",
+          900: "#74560f",
+          950: "#442f04",
         },
       },
     },

@@ -5,6 +5,8 @@ import NavBar from "@app/components/NavBar";
 import SponsorsBlack from "@app/components/SponsorsBlock";
 import BaseLayout from "@app/layout/BaseLayout";
 import Footer from "@app/components/Footer";
+import EventCard from "@app/components/EventCard";
+import { ParallaxView } from "@app/components/Parallax";
 
 export default function Home() {
   const [days, hours, minutes] = useCountdown("Apr 27, 2023 00:00:00");
@@ -15,7 +17,7 @@ export default function Home() {
           <NavBar />
         </div>
 
-        <div className="flex z-[2] flex-col gap-6 items-center justify-center h-screen">
+        <div className="flex z-[10] flex-col gap-6 items-center justify-center h-screen">
           <img
             src="/obsquralogoconf.png"
             alt="logo"
@@ -40,13 +42,21 @@ export default function Home() {
             {days} Days {hours} Hours {minutes} minutes
           </div>
         </div>
+        <div className="w-full h-screen">
+          <h1 className="text-7xl p-16 tracking-wider text-center font-semibold text-white-1000">
+            EVENTS
+          </h1>
+          <div className="w-full flex overflow-clip py-8 flex-row gap-8">
+            <ParallaxView />
+          </div>
+        </div>
         <SponsorsBlack />
         <Footer />
       </div>
       <img
         src="bg.svg"
         alt="background"
-        className="absolute inset-0 pointer-events-none object-cover w-full h-full"
+        className="absolute inset-0 z-0 pointer-events-none object-cover w-full h-full"
       />
     </BaseLayout>
   );

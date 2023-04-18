@@ -51,11 +51,11 @@ const NavBar = () => {
           href="/events"
           className={
             router.pathname === "/events?type=workshop"
-              ? "text-california-500"
+              ? "text-yellow-500"
               : "text-white-1000"
           }
         >
-          <p className="p-2 text-lg font-semibold 0 transition-all cursor-pointer duration-100 delay-75 ease-linear  hover:text-california-500">
+          <p className="p-2 text-lg font-semibold 0 transition-all cursor-pointer duration-100 delay-75 ease-linear  hover:text-yellow-500">
             Competitions
           </p>
         </Link>
