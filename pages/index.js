@@ -7,12 +7,33 @@ import BaseLayout from "@app/layout/BaseLayout";
 import Footer from "@app/components/Footer";
 import EventCard from "@app/components/EventCard";
 import { ParallaxView } from "@app/components/Parallax";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function Home() {
-  const [days, hours, minutes] = useCountdown("Apr 27, 2023 00:00:00");
+  const [days, hours, minutes] = useCountdown("May 04, 2023 00:00:00");
+  const router = useRouter();
+  const handleMouseMove = (e) => {
+    const { currentTarget } = e;
+    const rect = currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    currentTarget.style.setProperty("--mouse-x", `${x}px`);
+    currentTarget.style.setProperty("--mouse-y", `${y}px`);
+  };
+
+  useEffect(() => {
+    for (const card of document.querySelectorAll(".home")) {
+      const cardBody = card;
+      cardBody.onmousemove = (e) => handleMouseMove(e);
+    }
+  }, []);
+
   return (
     <BaseLayout>
-      <div className="bg-woodsmoke-950 min-h-screen relative">
+      <div
+        className={`home bg-woodsmoke-950 before:pointer-events-none min-h-screen relative before:absolute before:top-0 before:left-0 before:transition-opacity before:duration-500 before:w-full before:h-full before:bg-nicebg hover:before:opacity-20 before:z-10 before:contents-[''] `}
+      >
         <div className="absolute top-5 w-full px-5">
           <NavBar />
         </div>
@@ -41,7 +62,12 @@ export default function Home() {
           <div className="flex flex-row gap-2 text-white-1000 font-bold px-4 py-2 bg-gradient-to-r from-white-600 to rounded-md bg-woodsmoke-950 lg:gap-8">
             {days} Days {hours} Hours {minutes} minutes
           </div>
-          <button className="text-white-1000 rounded-md px-4 py-2 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease">
+          <button
+            onClick={() => {
+              router.push("https://www.yepdesk.com/profile/obsquraicet");
+            }}
+            className="text-white-1000 rounded-md px-4 py-2 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease"
+          >
             Register Now
           </button>
         </div>

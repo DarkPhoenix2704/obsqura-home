@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        nicebg:
+          "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.15) , transparent 50%)",
+        ...theme,
+      }),
       background: {
         hoverBg: "linear-gradient(90.73deg, #484A54 -86.18%, #25262B 101.37%)",
       },
