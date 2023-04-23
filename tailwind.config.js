@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         nicebg:
-          "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.15) , transparent 50%)",
+          "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),rgba(146, 148, 155, 0.5) , transparent 50%)",
         ...theme,
       }),
       background: {
