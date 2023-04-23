@@ -1,9 +1,11 @@
 import React, { useMemo, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import EventCard from "./EventCard";
+import events from "@app/data/events";
 
 const ParallaxView = () => {
   const { scrollYProgress } = useScroll();
+  const divRef = useRef(null);
 
   const skewValue = useMemo(() => {
     return Math.round(scrollYProgress);
@@ -11,10 +13,10 @@ const ParallaxView = () => {
 
   const marqueeVariants = {
     animate: {
-      x: ["-120px", "40px"],
+      x: ["-150%", "0%"],
       transition: {
         x: {
-          duration: "8",
+          duration: "15",
           ease: "linear",
           repeat: Infinity,
           repeatType: "loop",
@@ -24,6 +26,7 @@ const ParallaxView = () => {
   };
   return (
     <div
+      ref={divRef}
       className={`overflow-hidden w-full items-center skew-y-[${skewValue}] flex-nowrap z-[1]`}
     >
       <motion.div
@@ -38,11 +41,17 @@ const ParallaxView = () => {
         animate="animate"
         variants={marqueeVariants}
       >
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
+        {events.map((event) => {
+          return (
+            <EventCard
+              registration={event.fee}
+              key={event.name}
+              url={event.link}
+              image={event.image}
+              name={event.name}
+            />
+          );
+        })}
       </motion.div>
     </div>
   );

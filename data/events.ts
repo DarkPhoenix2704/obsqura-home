@@ -4,7 +4,8 @@ const events = [
     fee: "800",
     type: "WORKSHOP",
     link: "https://www.yepdesk.com/cyber-security/private/gn6rj68m27",
-  },
+    image: "/cybersecurity.png",
+  } /* 
   {
     name: "DISCURSO",
     fee: "30",
@@ -22,7 +23,7 @@ const events = [
     fee: "50",
     type: "WORKSHOP",
     link: "https://www.yepdesk.com/esports-WORKSHOP/private/lil7t565o1",
-  },
+  }, */ /* 
   {
     name: "CHALLENGE ZONE",
     fee: "30",
@@ -41,9 +42,10 @@ const events = [
     fee: "849",
     type: "WORKSHOP",
     prize: null,
+    image: "/harley.png",
     link: "https://www.yepdesk.com/hybrid-vehicles-WORKSHOP/private/a02ovlrp38",
-  },
-  {
+  }, */,
+  /*   {
     name: "PCB WORKSHOP",
     fee: "399",
     type: "WORKSHOP",
@@ -77,29 +79,31 @@ const events = [
     type: "WORKSHOP",
     prize: null,
     link: "https://www.yepdesk.com/cnc-drawing-bot-WORKSHOP/private/k36du3f917",
-  },
+  }, */
   {
     name: "HARLEY DAVIDSON WORKSHOP",
     fee: "849",
     type: "WORKSHOP",
+    image: "/harley.png",
     prize: null,
     link: "https://www.yepdesk.com/harley-davidson-WORKSHOP2/private/tosq487638",
   },
-  {
+  /*   {
     name: "CODE CLASH",
     fee: "100",
     type: "COMPETITION",
     prize: "2K",
     link: "https://www.yepdesk.com/code-clash/private/er0hpqqm8g",
-  },
+  }, */
   {
     name: "DRONE RACE",
     fee: "500",
+    image: "/dronerace.png",
     type: "COMPETITION",
     prize: null,
     link: "https://www.yepdesk.com/drone-race/private/qh207ogs32",
   },
-  {
+  /*   {
     name: "LOGO DESIGN COMPETITION",
     fee: "50",
     type: "COMPETITION",
@@ -126,12 +130,13 @@ const events = [
     type: "COMPETITION",
     prize: "2K",
     link: "https://www.yepdesk.com/code-war-coding-and-debugging-COMPETITION-/private/i678pmd47a",
-  },
+  }, */
   {
     name: "WALTZ AND WANDER",
     fee: "200",
     type: "COMPETITION",
     prize: "5K",
+    image: "/waltz.png",
     link: "https://www.yepdesk.com/waltz-and-wander",
   },
   {
@@ -139,6 +144,7 @@ const events = [
     fee: "2000",
     type: "COMPETITION",
     prize: "20K",
+    image: "/Rumba.png",
     link: "https://www.yepdesk.com/rumba",
   },
 ];
