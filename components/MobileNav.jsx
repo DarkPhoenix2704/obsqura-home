@@ -1,28 +1,19 @@
+import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { FaBars, FaHamburger } from "react-icons/fa";
-import MobileNav from "./MobileNav";
-import { useState } from "react";
 
-const NavBar = () => {
+const MobileNav = ({ setInvisible }) => {
   const router = useRouter();
-  const [isVisible, setIsVisible] = useState(false);
   return (
-    <>
-      {isVisible && <MobileNav setInvisible={setIsVisible} />}
-      <div className="flex z-[10] flex-row scroll-smooth items-center justify-between">
-        <Link href="/">
-          <h1 className="text-white-100 text-sm">
-            National Techno Cultural Fiesta of ICET
-          </h1>
-        </Link>
-        <FaBars
-          onClick={() => {
-            setIsVisible(true);
-          }}
-          className="text-white-1000 focus:transform focus:rotate-90 z-[2000] block rounded-md md:hidden bg-shark-950 p-1 w-8 h-8"
-        />
-        <div className="flex-row gap-4 px-8 rounded-lg hidden md:flex bg-shark-950">
+    <div className="z-[9999] translate-x-32 fixed h-screen w-screen inset-0 bg-[#1e1f23]">
+      <AiOutlineClose
+        onClick={() => {
+          setInvisible(false);
+        }}
+        className="text-white-1000 absolute focus:transform right-36 top-6 focus:rotate-90 z-[2000] block rounded-md md:hidden bg-shark-950 p-1 w-8 h-8"
+      />
+      <div className="flex mt-16 ml-4 flex-col text-white-1000">
+        <div className="flex-col gap-4 px-8 rounded-lg flex">
           <Link
             href="/"
             className={
@@ -68,9 +59,9 @@ const NavBar = () => {
             </p>
           </Link>
         </div>
+        <div className="absolute text-white-1000 bottom-2">Obsqura 23</div>
       </div>
-    </>
+    </div>
   );
 };
-
-export default NavBar;
+export default MobileNav;
