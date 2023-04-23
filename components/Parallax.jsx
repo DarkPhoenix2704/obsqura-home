@@ -11,7 +11,7 @@ const ParallaxView = () => {
 
   const marqueeVariants = {
     animate: {
-      x: ["-120px", "100px"],
+      x: ["-120px", "40px"],
       transition: {
         x: {
           duration: "8",

@@ -41,6 +41,9 @@ export default function Home() {
           <div className="flex flex-row gap-2 text-white-1000 font-bold px-4 py-2 bg-gradient-to-r from-white-600 to rounded-md bg-woodsmoke-950 lg:gap-8">
             {days} Days {hours} Hours {minutes} minutes
           </div>
+          <button className="text-white-1000 rounded-md px-4 py-2 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease">
+            Register Now
+          </button>
         </div>
         <div className="w-full h-screen">
           <h1 className="text-7xl p-16 tracking-wider text-center font-semibold text-white-1000">
@@ -53,11 +56,11 @@ export default function Home() {
         <SponsorsBlack />
         <Footer />
       </div>
-      <img
+      {/* <img
         src="bg.svg"
         alt="background"
         className="absolute inset-0 z-0 pointer-events-none object-cover w-full h-full"
-      />
+      /> */}
     </BaseLayout>
   );
 }
