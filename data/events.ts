@@ -86,7 +86,7 @@ const events = [
     type: "WORKSHOP",
     image: "/harley.png",
     prize: null,
-    link: "https://www.yepdesk.com/harley-davidson-WORKSHOP2/private/tosq487638",
+    link: "https://www.yepdesk.com/harley-davidson-workshop2/private/tosq487638",
   },
   /*   {
     name: "CODE CLASH",
