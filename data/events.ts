@@ -12,7 +12,7 @@ const events = [
     type: "COMPETITION",
     prize:"5K",
     link: "https://www.yepdesk.com/discurso/private/tho2fkrpl6",
-    Image:"/debate.png"
+    image:"/debate.png"
   },
   /* 
   {
