@@ -139,8 +139,8 @@ export default function Home() {
               Contact
             </h1>
             <p className="text-white-1000">For Any Queries</p>
-            <p className="text-white-1000">Manaf S - +91 81118 60806</p>
-            <p className="text-white-1000">Muhammed Ashley - +91 80863 48962</p>
+            <p className="text-white-1000">Manaf AV - +91 81118 60806</p>
+            <p className="text-white-1000">Muhammed Ashly - +91 80863 48962</p>
           </div>
         </div>
 
