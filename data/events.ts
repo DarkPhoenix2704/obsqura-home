@@ -91,13 +91,14 @@ const events = [
     prize: null,
     link: "https://www.yepdesk.com/harley-davidson-workshop2/private/tosq487638",
   },
-  /*   {
+     {
     name: "CODE CLASH",
     fee: "100",
     type: "COMPETITION",
     prize: "2K",
     link: "https://www.yepdesk.com/code-clash/private/er0hpqqm8g",
-  }, */
+    image: "/codeclash.png"
+  }, 
   {
     name: "DRONE RACE",
     fee: "500",
