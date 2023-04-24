@@ -5,7 +5,7 @@ const faqs = [
   },
   {
     question: "When is Obsqura?",
-    answer: "Obsqura is on 3rd, 4th and 5th of May",
+    answer: "Mark your calendars and get ready to experience a dazzling display of technology and innovation, as the much-awaited Obsqura Technical Fest is set to enthral you on the exquisite date of May 3,4 and 5",
   },
 ];
 
