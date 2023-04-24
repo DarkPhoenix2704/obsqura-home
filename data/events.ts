@@ -5,13 +5,15 @@ const events = [
     type: "WORKSHOP",
     link: "https://www.yepdesk.com/cyber-security/private/gn6rj68m27",
     image: "/cybersecurity.png",
-  } /* 
+  } ,
   {
     name: "DISCURSO",
     fee: "30",
     type: "COMPETITION",
+    prize:"5K",
     link: "https://www.yepdesk.com/discurso/private/tho2fkrpl6",
   },
+  /* 
   {
     name: "CAD MASTER",
     fee: "150",
