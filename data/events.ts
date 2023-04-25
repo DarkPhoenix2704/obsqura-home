@@ -156,7 +156,7 @@ const events = [
     fee: "2000",
     type: "COMPETITION",
     prize: "20K",
-    image: "/fashionshowcover.jpg",
+    image: "/fashionshowcover.png",
     link: "https://www.yepdesk.com/glamaroma",
   },
 ];
