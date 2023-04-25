@@ -109,6 +109,14 @@ const events = [
     prize: null,
     link: "https://www.yepdesk.com/drone-race/private/qh207ogs32",
   },
+  {
+    name: "Workshop on Architectural Design",
+    fee: "300",
+    image: "/civil Insta Strip 1 1.png",
+    type: "WORKSHOP",
+    prize: null,
+    link: "https://www.yepdesk.com/workshop-on-architectural-design/private/36nn0mqhv9",
+  },
   /*   {
     name: "LOGO DESIGN COMPETITION",
     fee: "50",
