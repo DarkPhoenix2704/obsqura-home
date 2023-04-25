@@ -78,11 +78,11 @@ const events = [
   },
   */
   {
-    name: "CNC DRAWING WORKSHOP",
+    name: "CNC DRAWING BOT WORKSHOP",
     fee: "50",
     type: "WORKSHOP",
     prize: null,
-    link: "https://www.yepdesk.com/cnc-drawing-bot-WORKSHOP/private/k36du3f917",
+    link: "https://www.yepdesk.com/cnc-drawing-bot-workshop/private/k36du3f917",
     image:"/drawing bot strip png 1.png"
   }, 
   {
