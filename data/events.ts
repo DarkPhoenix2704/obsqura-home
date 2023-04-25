@@ -151,6 +151,14 @@ const events = [
     image: "/Rumba.png",
     link: "https://www.yepdesk.com/rumba",
   },
+  {
+    name: "GLAMORAMA",
+    fee: "2000",
+    type: "COMPETITION",
+    prize: "20K",
+    image: "/fashionshowcover.jpg",
+    link: "https://www.yepdesk.com/glamaroma",
+  },
 ];
 
 export default events;
