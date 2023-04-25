@@ -76,13 +76,15 @@ const events = [
     prize: null,
     link: "https://www.yepdesk.com/robo-war3/private/muda25bnkn",
   },
+  */
   {
     name: "CNC DRAWING WORKSHOP",
     fee: "50",
     type: "WORKSHOP",
     prize: null,
     link: "https://www.yepdesk.com/cnc-drawing-bot-WORKSHOP/private/k36du3f917",
-  }, */
+    image:"/drawing bot strip png 1.png"
+  }, 
   {
     name: "HARLEY DAVIDSON WORKSHOP",
     fee: "849",
