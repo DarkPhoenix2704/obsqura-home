@@ -48,13 +48,15 @@ const events = [
     image: "/harley.png",
     link: "https://www.yepdesk.com/hybrid-vehicles-WORKSHOP/private/a02ovlrp38",
   }, */,
-  /*   {
+    {
     name: "PCB WORKSHOP",
     fee: "399",
     type: "WORKSHOP",
     prize: null,
-    link: "https://www.yepdesk.com/pcb-WORKSHOP/private/4b3o97buvk",
+    link: "https://www.yepdesk.com/pcb-workshop/private/4b3o97buvk",
+    image:"/pcb_strip 1.png"
   },
+  /* 
   {
     name: "3'S FOOTBALL",
     fee: "286",
