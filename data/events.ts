@@ -125,14 +125,16 @@ const events = [
     type: "COMPETITION",
     prize: "2.5K",
     link: "https://www.yepdesk.com/logo-design-COMPETITION/private/6jra0avi26",
-  },
+  },*/
   {
     name: "PROJECT EXPO",
     fee: "500",
     type: "COMPETITION",
     prize: "10K",
-    link: "https://www.yepdesk.com/project-expo5/private/bveb5ij1hm",
+    link: "https://www.yepdesk.com/project-expo5",
+    image: "/projectexpo_strip 1.png"
   },
+  /*
   {
     name: "HUNTERS MONARCHY",
     fee: "100",
