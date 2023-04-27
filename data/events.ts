@@ -180,7 +180,7 @@ const events = [
     fee: "200",
     type: "COMPETITION",
     prize: "4.5K",
-    image: "/bulletstrip.jpg",
+    image: "/bulletstrip.png",
     link: "https://www.yepdesk.com/bullet-battle",
   },
 ];
