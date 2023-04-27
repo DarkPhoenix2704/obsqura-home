@@ -14,13 +14,15 @@ const events = [
     link: "https://www.yepdesk.com/discurso/private/tho2fkrpl6",
     image:"/debate.png"
   },
-  /* 
+  
   {
     name: "CAD MASTER",
-    fee: "150",
+    fee: "50",
     type: "COMPETITION",
-    link: "https://www.yepdesk.com/cad-master2/private/kpihpvevan",
+    link: "https://www.yepdesk.com/cad-master2",
+    image:"/cadmasterstrip 1.png"
   },
+  /*
   {
     name: "ESPORTS WORKSHOP",
     fee: "50",
