@@ -136,6 +136,14 @@ const events = [
     link: "https://www.yepdesk.com/project-expo5",
     image: "/projectexpo_strip 1.png"
   },
+  {
+    name: "Pacelab Workshop",
+    fee: "290",
+    type: "WORKSHOP",
+    prize: "10Knull",
+    link: "https://www.yepdesk.com/project-expo5",
+    image: "/pacelabstrip 1.png"
+  },
   /*
   {
     name: "HUNTERS MONARCHY",
