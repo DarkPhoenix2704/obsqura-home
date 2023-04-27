@@ -173,6 +173,14 @@ const events = [
     image: "/fashionshowcover.png",
     link: "https://www.yepdesk.com/glamaroma",
   },
+  {
+    name: "Bullet Battle",
+    fee: "200",
+    type: "COMPETITION",
+    prize: "4.5K",
+    image: "/bulletstrip.jpg",
+    link: "https://www.yepdesk.com/bullet-battle",
+  },
 ];
 
 export default events;
