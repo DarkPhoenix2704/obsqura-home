@@ -58,6 +58,14 @@ const events = [
     link: "https://www.yepdesk.com/pcb-workshop/private/4b3o97buvk",
     image:"/pcb_strip 1.png"
   },
+  {
+    name: "0 Day Summit-Ethical Hacking Workshop ",
+    fee: "300",
+    type: "WORKSHOP",
+    prize: null,
+    link: "https://www.yepdesk.com/0-day-summit-the-new-age-of-computer-xploitation",
+    image:"/ethicalhackstrip 1.png"
+  },
   /* 
   {
     name: "3'S FOOTBALL",
