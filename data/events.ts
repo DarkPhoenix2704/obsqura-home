@@ -5,7 +5,7 @@ const events = [
     type: "WORKSHOP",
     link: "https://www.yepdesk.com/cyber-security/private/gn6rj68m27",
     image: "/cybersecurity.png",
-    tags: ["AI & DS", "WORKSHOP"],
+    tags: ["AI & DS", "WORKSHOP", "ALL"],
   },
   {
     name: "DISCURSO",
@@ -14,7 +14,7 @@ const events = [
     prize: "5K",
     link: "https://www.yepdesk.com/discurso/private/tho2fkrpl6",
     image: "/debate.png",
-    tags: ["CSE", "COMPETITION"],
+    tags: ["CSE", "COMPETITION", "ALL"],
   },
 
   {
@@ -23,7 +23,7 @@ const events = [
     type: "COMPETITION",
     link: "https://www.yepdesk.com/cad-master2",
     image: "/cadmasterstrip 1.png",
-    tags: ["CIVIL", "COMPETITION"],
+    tags: ["CIVIL", "COMPETITION", "ALL"],
   },
   ,
   /*
@@ -60,7 +60,7 @@ const events = [
     prize: null,
     link: "https://www.yepdesk.com/pcb-workshop/private/4b3o97buvk",
     image: "/pcb_strip 1.png",
-    tags: ["ECE", "WORKSHOP"],
+    tags: ["ECE", "WORKSHOP", "ALL"],
   },
   {
     name: "0 Day Summit-Ethical Hacking Workshop ",
@@ -69,7 +69,7 @@ const events = [
     prize: null,
     link: "https://www.yepdesk.com/0-day-summit-the-new-age-of-computer-xploitation",
     image: "/ethicalhackstrip 1.png",
-    tags: ["CSE", "WORKSHOP"],
+    tags: ["CSE", "WORKSHOP", "ALL"],
   },
   /* 
   {
@@ -101,7 +101,7 @@ const events = [
     prize: null,
     link: "https://www.yepdesk.com/cnc-drawing-bot-workshop/private/k36du3f917",
     image: "/drawing bot strip png 1.png",
-    tags: ["CSE", "WORKSHOP"],
+    tags: ["CSE", "WORKSHOP", "ALL"],
   },
   {
     name: "HARLEY DAVIDSON WORKSHOP",
@@ -110,7 +110,7 @@ const events = [
     image: "/harley.png",
     prize: null,
     link: "https://www.yepdesk.com/harley-davidson-workshop2/private/tosq487638",
-    tags: ["MECH", "WORKSHOP"],
+    tags: ["MECH", "WORKSHOP", "ALL"],
   },
   {
     name: "CODE CLASH",
@@ -119,7 +119,7 @@ const events = [
     prize: "2K",
     link: "https://www.yepdesk.com/code-clash/private/er0hpqqm8g",
     image: "/codeclash.png",
-    tags: ["CSE", "COMPETITION"],
+    tags: ["CSE", "COMPETITION", "ALL"],
   },
   {
     name: "DRONE RACE",
@@ -128,7 +128,7 @@ const events = [
     type: "COMPETITION",
     prize: null,
     link: "https://www.yepdesk.com/drone-race/private/qh207ogs32",
-    tags: ["ECE", "COMPETITION"],
+    tags: ["ECE", "COMPETITION", "ALL"],
   },
   {
     name: "Workshop on Architectural Design",
@@ -137,7 +137,7 @@ const events = [
     type: "WORKSHOP",
     prize: null,
     link: "https://www.yepdesk.com/workshop-on-architectural-design/private/36nn0mqhv9",
-    tags: ["CIVIL", "WORKSHOP"],
+    tags: ["CIVIL", "WORKSHOP", "ALL"],
   },
   /*   {
     name: "LOGO DESIGN COMPETITION",
@@ -153,7 +153,7 @@ const events = [
     prize: "10K",
     link: "https://www.yepdesk.com/project-expo5",
     image: "/projectexpo_strip 1.png",
-    tags: ["COMPETITION", "MECH"],
+    tags: ["COMPETITION", "MECH", "ALL"],
   },
   {
     name: "Web 3.0 Workshop",
@@ -162,7 +162,7 @@ const events = [
     prize: "10K",
     link: "https://www.yepdesk.com/project-expo5",
     image: "/pacelabstrip 1.png",
-    tags: ["WORKSHOP", "CSE"],
+    tags: ["WORKSHOP", "CSE", "ALL"],
   },
   /*
   {
@@ -186,7 +186,7 @@ const events = [
     prize: "5K",
     image: "/waltz.png",
     link: "https://www.yepdesk.com/waltz-and-wander",
-    tags: ["COMPETITION", "COMMON"],
+    tags: ["COMPETITION", "COMMON", "CULTURAL", "ALL"],
   },
   {
     name: "RUMBA",
@@ -195,7 +195,7 @@ const events = [
     prize: "20K",
     image: "/Rumba.png",
     link: "https://www.yepdesk.com/rumba",
-    tags: ["COMPETITION", "COMMON"],
+    tags: ["COMPETITION", "COMMON", "CULTURAL", "ALL"],
   },
   {
     name: "GLAMORAMA",
@@ -204,7 +204,7 @@ const events = [
     prize: "20K",
     image: "/fashionshowcover.png",
     link: "https://www.yepdesk.com/glamaroma",
-    tags: ["COMPETITION", "COMMON"],
+    tags: ["COMPETITION", "COMMON", "CULTURAL", "ALL"],
   },
   {
     name: "Bullet Battle",
@@ -213,7 +213,7 @@ const events = [
     prize: "4.5K",
     image: "/bulletstrip.png",
     link: "https://www.yepdesk.com/bullet-battle",
-    tags: ["COMPETITION", "MECH"],
+    tags: ["COMPETITION", "MECH", "ALL"],
   },
 ];
 

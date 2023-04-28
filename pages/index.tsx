@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+/*  @next/next/no-img-element */
 
 import { useCountdown } from "@app/hooks/useCountdown";
 import NavBar from "@app/components/NavBar";
@@ -7,12 +7,27 @@ import BaseLayout from "@app/layout/BaseLayout";
 import Footer from "@app/components/Footer";
 import EventCard from "@app/components/EventCard";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import events from "@app/data/events";
 import faqs from "@app/data/faq";
 
 export default function Home() {
   const [days, hours, minutes] = useCountdown("May 04, 2023 00:00:00");
+  const tags = [
+    "ALL",
+    "COMMON",
+    "CULTURAL",
+    "COMPETITION",
+    "WORKSHOP",
+    "AI & DS",
+    "CSE",
+    "CIVIL",
+    "ECE",
+    "MECH",
+  ];
+
+  const [activeTag, setActiveTag] = useState("ALL");
+
   const router = useRouter();
   const handleMouseMove = (e) => {
     const { currentTarget } = e;
@@ -23,10 +38,14 @@ export default function Home() {
     currentTarget.style.setProperty("--mouse-y", `${y}px`);
   };
 
+  const eventsByTag = useMemo(() => {
+    return events.filter((event) => event.tags.includes(activeTag));
+  }, [activeTag]);
+
   useEffect(() => {
     for (const card of document.querySelectorAll(".home")) {
       const cardBody = card;
-      cardBody.onmousemove = (e) => handleMouseMove(e);
+      cardBody.addEventListener("mousemove", handleMouseMove);
     }
   }, []);
 
@@ -45,10 +64,6 @@ export default function Home() {
             alt="logo"
             className="lg:w-1/2 w-11/12 "
           />
-          {/* 
-          <h1 className="text-white-1000 font-bold text-3xl text-center">
-            APRIL 27, 28, 29
-          </h1> */}
           <div className="flex flex-row gap-2 lg:gap-8 my-4">
             <h1 className="text-white-1000  font-bold text-sm text-center lg:text-xl">
               UNLEASHING CREATIVITY
@@ -76,8 +91,21 @@ export default function Home() {
           <h1 className="text-7xl px-8 items-center tracking-wider text-center font-semibold text-white-1000">
             EVENTS
           </h1>
+          <div className="flex my-4 px-4 scrollbar-hide overflow-x-scroll flex-row justify-center gap-4">
+            {tags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => setActiveTag(tag)}
+                className={`px-4 md:py-2 w-18 text-white-1000 rounded-md px-4 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease ${
+                  activeTag === tag ? "bg-gradient-to-b from-white-600" : ""
+                }`}
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
           <div className=" flex flex-row mx-8 justify-center flex-wrap py-8 gap-8">
-            {events.map((event) => {
+            {eventsByTag.map((event) => {
               return (
                 <EventCard
                   registration={event.fee}
@@ -101,19 +129,19 @@ export default function Home() {
             </h1>
             <div className="flex flex-col w-full px-8">
               {faqs.map((faq) => (
-                <div key={faq.question} class="py-2">
-                  <details class="group text-white-1000">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                <div key={faq.question} className="py-2">
+                  <details className="group text-white-1000">
+                    <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                       <span className="text-2xl w-full"> {faq.question}</span>
-                      <span class="transition group-open:rotate-180">
+                      <span className="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -121,7 +149,7 @@ export default function Home() {
                         </svg>
                       </span>
                     </summary>
-                    <p class="text-white-1000 mt-1 group-open:animate-fadeIn">
+                    <p className="text-white-1000 mt-1 group-open:animate-fadeIn">
                       {faq.answer}
                     </p>
                   </details>
