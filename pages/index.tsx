@@ -23,6 +23,8 @@ export default function Home() {
     "CSE",
     "CIVIL",
     "ECE",
+    "MCA",
+    "MBA",
     "MECH",
   ];
 
