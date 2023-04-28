@@ -97,7 +97,9 @@ export default function Home() {
                 key={tag}
                 onClick={() => setActiveTag(tag)}
                 className={`px-4 md:py-2 w-18 text-white-1000 rounded-md px-4 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease ${
-                  activeTag === tag ? "bg-gradient-to-b from-white-600" : ""
+                  activeTag === tag
+                    ? "bg-gradient-to-b scale-95 from-white-600"
+                    : ""
                 }`}
               >
                 {tag}
