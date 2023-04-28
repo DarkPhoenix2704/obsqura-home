@@ -5,23 +5,27 @@ const events = [
     type: "WORKSHOP",
     link: "https://www.yepdesk.com/cyber-security/private/gn6rj68m27",
     image: "/cybersecurity.png",
-  } ,
+    tags: ["AI & DS", "WORKSHOP"],
+  },
   {
     name: "DISCURSO",
     fee: "30",
     type: "COMPETITION",
-    prize:"5K",
+    prize: "5K",
     link: "https://www.yepdesk.com/discurso/private/tho2fkrpl6",
-    image:"/debate.png"
+    image: "/debate.png",
+    tags: ["CSE", "COMPETITION"],
   },
-  
+
   {
     name: "CAD MASTER",
     fee: "50",
     type: "COMPETITION",
     link: "https://www.yepdesk.com/cad-master2",
-    image:"/cadmasterstrip 1.png"
+    image: "/cadmasterstrip 1.png",
+    tags: ["CIVIL", "COMPETITION"],
   },
+  ,
   /*
   {
     name: "ESPORTS WORKSHOP",
@@ -49,14 +53,14 @@ const events = [
     prize: null,
     image: "/harley.png",
     link: "https://www.yepdesk.com/hybrid-vehicles-WORKSHOP/private/a02ovlrp38",
-  }, */,
-    {
+  }, */ {
     name: "PCB WORKSHOP",
     fee: "399",
     type: "WORKSHOP",
     prize: null,
     link: "https://www.yepdesk.com/pcb-workshop/private/4b3o97buvk",
-    image:"/pcb_strip 1.png"
+    image: "/pcb_strip 1.png",
+    tags: ["ECE", "WORKSHOP"],
   },
   {
     name: "0 Day Summit-Ethical Hacking Workshop ",
@@ -64,7 +68,8 @@ const events = [
     type: "WORKSHOP",
     prize: null,
     link: "https://www.yepdesk.com/0-day-summit-the-new-age-of-computer-xploitation",
-    image:"/ethicalhackstrip 1.png"
+    image: "/ethicalhackstrip 1.png",
+    tags: ["CSE", "WORKSHOP"],
   },
   /* 
   {
@@ -95,8 +100,9 @@ const events = [
     type: "WORKSHOP",
     prize: null,
     link: "https://www.yepdesk.com/cnc-drawing-bot-workshop/private/k36du3f917",
-    image:"/drawing bot strip png 1.png"
-  }, 
+    image: "/drawing bot strip png 1.png",
+    tags: ["CSE", "WORKSHOP"],
+  },
   {
     name: "HARLEY DAVIDSON WORKSHOP",
     fee: "849",
@@ -104,15 +110,17 @@ const events = [
     image: "/harley.png",
     prize: null,
     link: "https://www.yepdesk.com/harley-davidson-workshop2/private/tosq487638",
+    tags: ["MECH", "WORKSHOP"],
   },
-     {
+  {
     name: "CODE CLASH",
     fee: "100",
     type: "COMPETITION",
     prize: "2K",
     link: "https://www.yepdesk.com/code-clash/private/er0hpqqm8g",
-    image: "/codeclash.png"
-  }, 
+    image: "/codeclash.png",
+    tags: ["CSE", "COMPETITION"],
+  },
   {
     name: "DRONE RACE",
     fee: "500",
@@ -120,6 +128,7 @@ const events = [
     type: "COMPETITION",
     prize: null,
     link: "https://www.yepdesk.com/drone-race/private/qh207ogs32",
+    tags: ["ECE", "COMPETITION"],
   },
   {
     name: "Workshop on Architectural Design",
@@ -128,6 +137,7 @@ const events = [
     type: "WORKSHOP",
     prize: null,
     link: "https://www.yepdesk.com/workshop-on-architectural-design/private/36nn0mqhv9",
+    tags: ["CIVIL", "WORKSHOP"],
   },
   /*   {
     name: "LOGO DESIGN COMPETITION",
@@ -142,15 +152,17 @@ const events = [
     type: "COMPETITION",
     prize: "10K",
     link: "https://www.yepdesk.com/project-expo5",
-    image: "/projectexpo_strip 1.png"
+    image: "/projectexpo_strip 1.png",
+    tags: ["COMPETITION", "MECH"],
   },
   {
-    name: "Pacelab Workshop",
+    name: "Web 3.0 Workshop",
     fee: "290",
     type: "WORKSHOP",
-    prize: "10Knull",
+    prize: "10K",
     link: "https://www.yepdesk.com/project-expo5",
-    image: "/pacelabstrip 1.png"
+    image: "/pacelabstrip 1.png",
+    tags: ["WORKSHOP", "CSE"],
   },
   /*
   {
@@ -174,6 +186,7 @@ const events = [
     prize: "5K",
     image: "/waltz.png",
     link: "https://www.yepdesk.com/waltz-and-wander",
+    tags: ["COMPETITION", "COMMON"],
   },
   {
     name: "RUMBA",
@@ -182,6 +195,7 @@ const events = [
     prize: "20K",
     image: "/Rumba.png",
     link: "https://www.yepdesk.com/rumba",
+    tags: ["COMPETITION", "COMMON"],
   },
   {
     name: "GLAMORAMA",
@@ -190,6 +204,7 @@ const events = [
     prize: "20K",
     image: "/fashionshowcover.png",
     link: "https://www.yepdesk.com/glamaroma",
+    tags: ["COMPETITION", "COMMON"],
   },
   {
     name: "Bullet Battle",
@@ -198,6 +213,7 @@ const events = [
     prize: "4.5K",
     image: "/bulletstrip.png",
     link: "https://www.yepdesk.com/bullet-battle",
+    tags: ["COMPETITION", "MECH"],
   },
 ];
 
