@@ -93,7 +93,7 @@ export default function Home() {
           <h1 className="text-7xl px-8 items-center tracking-wider text-center font-semibold text-white-1000">
             EVENTS
           </h1>
-          <div className="flex my-4 px-4 scrollbar-hide overflow-x-scroll flex-row items-center md:justify-center gap-4">
+          <div className="flex my-4 px-4 scrollbar-hide flex-wrap flex-row items-center justify-center gap-4">
             {tags.map((tag) => (
               <p
                 key={tag}
@@ -127,8 +127,8 @@ export default function Home() {
           id="faqs"
           className="bg-gradient-to-b mx-4 rounded-lg from-[#1E1F23] to-[#1E1F23]"
         >
-          <div className="flex flex-col lg:flex-row items-center py-8">
-            <h1 className="text-7xl px-8 items-center tracking-wider text-left font-semibold text-white-1000">
+          <div className="flex flex-col lg:flex-row items-center md:py-8 py-4">
+            <h1 className="md:text-7xl text-3xl px-8 items-center tracking-wider text-left font-semibold text-white-1000">
               FAQ
             </h1>
             <div className="flex flex-col w-full px-8">
@@ -136,7 +136,7 @@ export default function Home() {
                 <div key={faq.question} className="py-2">
                   <details className="group text-white-1000">
                     <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                      <span className="text-2xl w-full"> {faq.question}</span>
+                      <span className="text-xl w-full"> {faq.question}</span>
                       <span className="transition group-open:rotate-180">
                         <svg
                           fill="none"
@@ -166,8 +166,8 @@ export default function Home() {
           id="contact"
           className="bg-gradient-to-b m-4 rounded-lg from-[#1E1F23] to-[#1E1F23]"
         >
-          <div className="flex flex-col items-center py-8">
-            <h1 className="text-7xl px-8 items-center tracking-wider text-left font-semibold text-white-1000">
+          <div className="flex flex-col items-center md:py-8 py-4">
+            <h1 className="md:text-7xl text-2xl px-8 items-center tracking-wider text-left font-semibold text-white-1000">
               Contact
             </h1>
             <p className="text-white-1000">For Any Queries</p>
