@@ -19,7 +19,7 @@ export default function Home() {
     "CULTURAL",
     "COMPETITION",
     "WORKSHOP",
-    "AI & DS",
+    "AD & CC",
     "CSE",
     "CIVIL",
     "ECE",
@@ -93,19 +93,19 @@ export default function Home() {
           <h1 className="text-7xl px-8 items-center tracking-wider text-center font-semibold text-white-1000">
             EVENTS
           </h1>
-          <div className="flex my-4 px-4 scrollbar-hide overflow-x-scroll flex-row justify-center gap-4">
+          <div className="flex my-4 px-4 scrollbar-hide overflow-x-scroll flex-row items-center md:justify-center gap-4">
             {tags.map((tag) => (
-              <button
+              <p
                 key={tag}
                 onClick={() => setActiveTag(tag)}
-                className={`px-4 md:py-2 w-18 text-white-1000 rounded-md px-4 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease ${
+                className={`px-4 h-8 py-2 w-18 text-white-1000 rounded-md px-4 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease ${
                   activeTag === tag
                     ? "bg-gradient-to-b scale-95 from-white-600"
                     : ""
                 }`}
               >
                 {tag}
-              </button>
+              </p>
             ))}
           </div>
           <div className=" flex flex-row mx-8 justify-center flex-wrap py-8 gap-8">

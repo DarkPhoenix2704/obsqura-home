@@ -1,11 +1,20 @@
 const events = [
   {
+    name: "HACK LOOP",
+    fee: "500",
+    type: "HACKATHON",
+    prize: "50K",
+    link: "https://hackloop.obsqura.tech",
+    image: "/hackLoop.png",
+    tags: ["CSE", "HACKATHON", "ALL"],
+  },
+  {
     name: "CYBER SECURITY WORKSHOP",
     fee: "800",
     type: "WORKSHOP",
     link: "https://www.yepdesk.com/cyber-security/",
     image: "/cybersecurity.png",
-    tags: ["AI & DS", "WORKSHOP", "ALL"],
+    tags: ["AD & CC", "WORKSHOP", "ALL"],
   },
   {
     name: "DISCURSO",
@@ -270,6 +279,24 @@ const events = [
     prize: "5K",
     image: "/carpa.png",
     link: "https://bit.ly/CarpeDiemObsqura23",
+    tags: ["COMPETITION", "MBA", "ALL"],
+  },
+  {
+    name: "AD-SELFY",
+    fee: "100",
+    type: "COMEPETITION",
+    prize: "3K",
+    image: "/AdFly.png",
+    link: "https://bit.ly/adselfyobsqura23",
+    tags: ["COMPETITION", "MBA", "ALL"],
+  },
+  {
+    name: "BRAIN MASTER",
+    fee: "150",
+    type: "COMEPETITION",
+    prize: "3K",
+    image: "/brain.png",
+    link: "https://bit.ly/BrainMasterObsqura23",
     tags: ["COMPETITION", "MBA", "ALL"],
   },
 ];
