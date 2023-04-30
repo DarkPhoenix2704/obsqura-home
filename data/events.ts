@@ -33,6 +33,15 @@ const events = [
     image: "/debate.png",
     tags: ["CSE", "COMPETITION", "ALL"],
   },
+  {
+    name: "DIGITAL ART COMPETITION",
+    fee: "50",
+    type: "COMPETITION",
+    prize: "3K",
+    link: "https://bit.ly/digitalart_23/",
+    image: "/digitalArt.png",
+    tags: ["CSE", "COMPETITION", "ALL"],
+  },
 
   {
     name: "CAD MASTER",
@@ -61,18 +70,6 @@ const events = [
     tags: ["CIVIL", "COMPETITION", "ALL"],
   },
   /*
-  {
-    name: "ESPORTS WORKSHOP",
-    fee: "50",
-    type: "WORKSHOP",
-    link: "https://www.yepdesk.com/esports-WORKSHOP/private/lil7t565o1",
-  }, */ /* 
-  {
-    name: "CHALLENGE ZONE",
-    fee: "30",
-    type: "GAME",
-    link: "https://www.yepdesk.com/challenge-zone/private/s82398qcgf",
-  },
   {
     name: "HYBRID VEHICLE WORKSHOP",
     fee: "849",
@@ -105,13 +102,6 @@ const events = [
     type: "COMPETITION",
     prize: null,
     link: "https://www.yepdesk.com/3-s-football2/private/rv75g41nvg",
-  },
-  {
-    name: "PES MANIA",
-    fee: "50",
-    type: "COMPETITION",
-    prize: "3K",
-    link: "https://www.yepdesk.com/pesmania/private/pdgr49cq0b",
   },
   */
   {
@@ -168,13 +158,15 @@ const events = [
     link: "https://www.yepdesk.com/workshop-on-architectural-design/",
     tags: ["CIVIL", "WORKSHOP", "ALL"],
   },
-  /*   {
+  {
     name: "LOGO DESIGN COMPETITION",
-    fee: "50",
+    fee: "20",
     type: "COMPETITION",
-    prize: "2.5K",
-    link: "https://www.yepdesk.com/logo-design-COMPETITION/private/6jra0avi26",
-  },*/
+    prize: "1K",
+    image: "/logoDe.png",
+    link: "https://bit.ly/3AE5po5",
+    tags: ["CSE", "COMPETITION", "ALL"],
+  },
   {
     name: "PROJECT EXPO",
     fee: "500",
