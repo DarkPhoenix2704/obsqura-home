@@ -17,6 +17,14 @@ const events = [
     tags: ["AD & CC", "WORKSHOP", "ALL"],
   },
   {
+    name: "HTML & DOM MANIPULATION",
+    fee: "250",
+    type: "WORKSHOP",
+    link: "https://forms.gle/sJi6ArV95hrkjh9c7",
+    image: "/hrml.png",
+    tags: ["AD & CC", "WORKSHOP", "ALL"],
+  },
+  {
     name: "DISCURSO",
     fee: "30",
     type: "COMPETITION",
@@ -34,7 +42,24 @@ const events = [
     image: "/cadmasterstrip 1.png",
     tags: ["CIVIL", "COMPETITION", "ALL"],
   },
-  ,
+  {
+    name: "24mm",
+    fee: "100",
+    type: "COMPETITION",
+    prize: "3K",
+    link: "https://bit.ly/24mm60sec",
+    image: "/shortFm.png",
+    tags: ["CIVIL", "COMPETITION", "ALL"],
+  },
+  {
+    name: "PES MANIA",
+    fee: "50",
+    type: "COMPETITION",
+    prize: "3K",
+    link: "https://bit.ly/pesmania23",
+    image: "/pesMania.png",
+    tags: ["CIVIL", "COMPETITION", "ALL"],
+  },
   /*
   {
     name: "ESPORTS WORKSHOP",
@@ -88,14 +113,16 @@ const events = [
     prize: "3K",
     link: "https://www.yepdesk.com/pesmania/private/pdgr49cq0b",
   },
+  */
   {
     name: "ROBO WAR",
-    fee: "500",
+    fee: "600",
     type: "COMPETITION",
-    prize: null,
-    link: "https://www.yepdesk.com/robo-war3/private/muda25bnkn",
+    prize: "20K",
+    image: "/roboWar.png",
+    link: "https://www.yepdesk.com/robo-war3/",
+    tags: ["ALL", "COMPETITION", "ECE"],
   },
-  */
   {
     name: "CNC DRAWING BOT WORKSHOP",
     fee: "50",
@@ -163,6 +190,14 @@ const events = [
     type: "WORKSHOP",
     prize: "10K",
     link: "https://www.yepdesk.com/project-expo5",
+    image: "/pacelabstrip 1.png",
+    tags: ["WORKSHOP", "CSE", "ALL"],
+  },
+  {
+    name: "E-SPORTS Workshop",
+    fee: "50",
+    type: "WORKSHOP",
+    link: "https://bit.ly/3AByGQe",
     image: "/pacelabstrip 1.png",
     tags: ["WORKSHOP", "CSE", "ALL"],
   },
