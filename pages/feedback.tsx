@@ -27,7 +27,7 @@ const Feedack = () => {
         Please record your feedback here. We would love to hear
       </p>
 
-      <Link href="https://airtable.com/shrCHOfUKQdAUjTfH">
+      <Link href="https://forms.gle/9xLmzZm5gY3EcFE3A">
         <button className="text-white-1000  z-[256] rounded-md px-4 py-2 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease">
           Feedback Form
         </button>
