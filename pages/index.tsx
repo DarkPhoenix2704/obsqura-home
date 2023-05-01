@@ -64,7 +64,7 @@ export default function Home() {
           <img
             src="/obsquralogoconf.png"
             alt="logo"
-            className="lg:w-1/2 w-11/12 "
+            className="lg:w-1/2 absolute top-[20%] w-11/12 "
           />
           <img
             src="/gopi.png"
@@ -77,7 +77,7 @@ export default function Home() {
             className="absolute w-256 -right-0 bottom-0 w-2/3 lg:w-1/3"
           />
 
-          <div className="flex flex-row gap-2  z-[15] lg:gap-8 my-4">
+          <div className="flex flex-row gap-2 absolute top-[40%] md:top-[65%]  z-[15] lg:gap-8 my-4">
             <h1 className="text-white-1000  font-bold text-sm text-center lg:text-xl">
               UNLEASHING CREATIVITY
             </h1>
@@ -88,14 +88,14 @@ export default function Home() {
               CELEBERATING INNOVATION
             </h1>
           </div>
-          <div className="flex z-[256] flex-row gap-2 text-white-1000 font-bold px-4 py-2 bg-gradient-to-r from-white-600 to rounded-md bg-woodsmoke-950 lg:gap-8">
+          <div className="flex absolute top-[80%] z-[256] flex-row gap-2 text-white-1000 font-bold px-4 py-2 bg-gradient-to-r from-white-600 to rounded-md bg-woodsmoke-950 lg:gap-8">
             {days} Days {hours} Hours {minutes} minutes
           </div>
           <button
             onClick={() => {
               router.push("https://www.yepdesk.com/profile/obsquraicet");
             }}
-            className="text-white-1000 z-[256] rounded-md px-4 py-2 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease"
+            className="text-white-1000  absolute top-[90%] z-[256] rounded-md px-4 py-2 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease"
           >
             Register Now
           </button>
