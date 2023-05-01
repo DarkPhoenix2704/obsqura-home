@@ -74,7 +74,7 @@ export default function Home() {
           <img
             src="/teri miko.png"
             alt="logo"
-            className="absolute w-256 right-0 bottom-0 w-2/3 lg:w-1/3"
+            className="absolute w-256 -right-0 bottom-0 w-2/3 lg:w-1/3"
           />
 
           <div className="flex flex-row gap-2  z-[15] lg:gap-8 my-4">
