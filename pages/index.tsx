@@ -94,7 +94,7 @@ export default function Home() {
           </div>
           <button
             onClick={() => {
-              router.push("https://www.yepdesk.com/profile/obsquraicet");
+              router.push("https://forms.gle/VeLiFNinysT8qbB56");
             }}
             className="text-white-1000  absolute top-[90%] z-[256] rounded-md px-4 py-2 bg-gradient-to-b from-white-600 bg-woodsmoke-950 hover:scale-95 transition-all ease"
           >
