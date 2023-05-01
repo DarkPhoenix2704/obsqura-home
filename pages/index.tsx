@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /*  @next/next/no-img-element */
 
 import { useCountdown } from "@app/hooks/useCountdown";
